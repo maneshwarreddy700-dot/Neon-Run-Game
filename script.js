@@ -503,8 +503,7 @@ function updatePlayer() {
 
 function updateObjects(delta) {
 
-    const movement =
-        gameSpeed * delta;
+   const movement = gameSpeed * 60 * delta;
 
 
     obstacles.forEach((obstacle) => {
