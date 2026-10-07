@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NEON RUN</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="game-wrapper">
+
+        <!-- HEADER -->
+
+        <header class="game-header">
+
+            <div class="logo">
+                NEON<span>RUN</span>
+            </div>
+
+            <div class="stats">
+
+                <div>
+                    SCORE
+                    <strong id="score">0</strong>
+                </div>
+
+                <div>
+                    COINS
+                    <strong id="coins">0</strong>
+                </div>
+
+                <div>
+                    ❤️
+                    <strong id="lives">3</strong>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- GAME -->
+
+        <main class="game-container">
+
+            <canvas
+                id="gameCanvas"
+                width="1000"
+                height="500"
+            ></canvas>
+
+
+            <!-- START SCREEN -->
+
+            <div
+                class="game-screen"
+                id="startScreen"
+            >
+
+                <div class="screen-box">
+
+                    <div class="big-icon">
+                        🏃
+                    </div>
+
+                    <h1>
+                        NEON <span>RUN</span>
+                    </h1>
+
+                    <p>
+                        RUN • JUMP • COLLECT • SURVIVE
+                    </p>
+
+                    <button
+                        id="startBtn"
+                        class="neon-button"
+                    >
+                        START GAME
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- GAME OVER -->
+
+            <div
+                class="game-screen hidden"
+                id="gameOverScreen"
+            >
+
+                <div class="screen-box">
+
+                    <div class="big-icon">
+                        💥
+                    </div>
+
+                    <h1>
+                        GAME <span>OVER</span>
+                    </h1>
+
+                    <p>
+                        FINAL SCORE:
+                        <strong id="finalScore">
+                            0
+                        </strong>
+                    </p>
+
+                    <button
+                        id="restartBtn"
+                        class="neon-button"
+                    >
+                        PLAY AGAIN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+            <button
+                id="leftBtn"
+                class="control-button"
+            >
+                ◀
+            </button>
+
+            <button
+                id="jumpBtn"
+                class="control-button jump"
+            >
+                ▲
+            </button>
+
+            <button
+                id="rightBtn"
+                class="control-button"
+            >
+                ▶
+            </button>
+
+        </div>
+
+
+        <p class="instructions">
+            Keyboard:
+            <b>←</b>
+            <b>→</b>
+            Move
+            |
+            <b>SPACE</b>
+            Jump
+        </p>
+
+        <footer>
+            NEON RUN • CYBERPUNK EDITION
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
